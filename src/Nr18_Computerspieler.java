@@ -26,7 +26,7 @@ public class Nr18_Computerspieler {
 				
 				//Beschimpfe den Spieler, wenn er eine inkonsistente Eingabe macht
 				if(!(ratewert == ratewert + ( (obergrenze - ratewert)/2 ))){
-					//Aktualisiere Ratewert und grenze Suchgebiet neu ein
+					//Aktualisiere Ratewert und grenze das Suchgebiet neu ein
 					untergrenze = ratewert;
 					ratewert = ratewert + ( (obergrenze - ratewert)/2 );
 					versuche = versuche + 1; 
@@ -38,7 +38,7 @@ public class Nr18_Computerspieler {
 				
 				//Beschimpfe den Spieler, wenn er eine inkonsistente Eingabe macht
 				if(!(ratewert == ratewert + ( (untergrenze - ratewert) /2 ))){
-					//Aktualisiere Ratewert und grenze Suchgebiet neu ei
+					//Aktualisiere Ratewert und grenze das Suchgebiet neu ein
 					obergrenze = ratewert;
 					ratewert = ratewert + ( (untergrenze - ratewert) /2 );
 					versuche = versuche + 1; 
