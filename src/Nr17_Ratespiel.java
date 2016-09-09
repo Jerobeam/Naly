@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Nr17Ratespiel {
+public class Nr17_Ratespiel {
 
 	public static void main(String[] args) {
 

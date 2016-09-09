@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GGT {
+public class Nr14c_GGT {
 
 	public static void main(String[] args) {
 

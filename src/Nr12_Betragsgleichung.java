@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Nr12Betragsgleichung {
+public class Nr12_Betragsgleichung {
 
 	public static void main(String[] args) {
 		
