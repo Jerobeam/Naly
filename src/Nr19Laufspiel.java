@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Laufspiel {
+public class Nr19Laufspiel {
 
 	public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LaufspielSpielfeld {
+public class Nr20LaufspielSpielfeld {
 
 	public static void main(String[] args) {
 
