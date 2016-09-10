@@ -6,8 +6,7 @@ public class Nr21_PiBestimmen {
 			
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Wie viele Punkte sollen erstellt werden?");
-		//long anzahl = scanner.nextLong();
-		int nPunkte = 1000;
+		long nPunkte = scanner.nextLong();
 		
 		int nInnen = 0;
 		
