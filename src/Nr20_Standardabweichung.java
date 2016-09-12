@@ -11,11 +11,11 @@ public class Nr20_Standardabweichung {
 		System.out.println("Mittelwert für Feld 1: " + mittelwert);
 
 		// Berechne Varianz
-		double var = berechneVarianz(p, mittelwert);
+		double var = berechneVarianz(p);
 		System.out.println("Varianz für Feld 1: " + var);
 
 		// Berechne Standardabweichung
-		double roh = Math.sqrt(berechneVarianz(p, mittelwert));
+		double roh = Math.sqrt(berechneVarianz(p));
 		System.out.println("Standardabweichung für Feld 1: " + roh);
 
 		System.out.println("-------------------------------------------");
@@ -32,11 +32,11 @@ public class Nr20_Standardabweichung {
 		System.out.println("Mittelwert für Würfelexperiment: " + mittelwert);
 
 		// Berechne Varianz
-		var = berechneVarianz(wuerfel, mittelwert);
+		var = berechneVarianz(wuerfel);
 		System.out.println("Varianz für Würfelexperiment: " + var);
 
 		// Berechne Standardabweichung
-		roh = Math.sqrt(berechneVarianz(wuerfel, mittelwert));
+		roh = Math.sqrt(berechneVarianz(wuerfel));
 		System.out.println("Standardabweichung für Würfelexperiment: " + roh);
 
 		System.out.println("-------------------------------------------");
@@ -59,11 +59,11 @@ public class Nr20_Standardabweichung {
 		System.out.println("Mittelwert für Würfelexperiment: " + mittelwert);
 
 		// Berechne Varianz
-		var = berechneVarianz(wuerfel2, mittelwert);
+		var = berechneVarianz(wuerfel2);
 		System.out.println("Varianz für Würfelexperiment: " + var);
 
 		// Berechne Standardabweichung
-		roh = Math.sqrt(berechneVarianz(wuerfel2, mittelwert));
+		roh = Math.sqrt(berechneVarianz(wuerfel2));
 		System.out.println("Standardabweichung für Würfelexperiment: " + roh);
 
 		System.out.println("-------------------------------------------");
@@ -73,11 +73,11 @@ public class Nr20_Standardabweichung {
 		System.out.println("Mittelwert des Histogramms: " + mittelwert);
 
 		// Berechne Varianz
-		var = berechneVarianz(histogram, mittelwert);
+		var = berechneVarianz(histogram);
 		System.out.println("Varianz des Histogramms: " + var);
 
 		// Berechne Standardabweichung
-		roh = Math.sqrt(berechneVarianz(histogram, mittelwert));
+		roh = Math.sqrt(berechneVarianz(histogram));
 		System.out.println("Standardabweichung des Histogramms: " + roh);
 		
 	}
@@ -90,7 +90,8 @@ public class Nr20_Standardabweichung {
 		return x;
 	}
 
-	private static double berechneVarianz(int[] feld, double mittelwert) {
+	private static double berechneVarianz(int[] feld) {
+		double mittelwert = berechneMittelwert(feld);
 		double var = 0;
 		for (int i = 0; i < feld.length; i++) {
 			var = var + ((1.0 / (feld.length - 1)) * Math.pow((feld[i] - mittelwert), 2));

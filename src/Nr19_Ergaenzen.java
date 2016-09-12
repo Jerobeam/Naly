@@ -158,9 +158,10 @@ public class Nr19_Ergaenzen {
 			kuerzeres_feld = inpC;
 		}
 		
-		boolean alle_felder_enthalten = true;
+		boolean alle_felder_enthalten = false;
 		
 		for (int i = 0; i < kuerzeres_feld.length; i++) {
+			alle_felder_enthalten = false;
 			for (int j = 0; j < laengeres_feld.length; j++) {
 				if(kuerzeres_feld[i] == laengeres_feld[j]){
 					alle_felder_enthalten = true;
@@ -168,6 +169,9 @@ public class Nr19_Ergaenzen {
 				}else{
 					alle_felder_enthalten = false;
 				}
+			}
+			if(!alle_felder_enthalten){
+				break;
 			}
 		}
 		
