@@ -88,8 +88,8 @@ public class Main {
 		buecher[0] = b1;
 		buecher[1] = b2;
 		System.out.println("Ausgabe vor Tausch");
-		System.out.println("Buch 1 Titel: " + buecher[0].titel);
-		System.out.println("Buch 1 Titel: " + buecher[1].titel);
+		System.out.println("Buch an Stelle O Titel: " + buecher[0].titel);
+		System.out.println("Buch an Stelle 1 Titel: " + buecher[1].titel);
 		System.out.println();
 		
 		// f.) Richtig :)!
@@ -98,8 +98,8 @@ public class Main {
 		
 		// Durch eine Testausgabe hättest du vielleicht gesehen, dass es richtig war :)
 		System.out.println("Ausgabe nach Tausch");
-		System.out.println("Buch 1 Titel: " + buecher[0].titel);
-		System.out.println("Buch 1 Titel: " + buecher[1].titel);
+		System.out.println("Buch an Stelle 0 Titel: " + buecher[0].titel);
+		System.out.println("Buch an Stelle 1 Titel: " + buecher[1].titel);
 		System.out.println();
 		
 		
